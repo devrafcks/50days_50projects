@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>My Project</title>
-    </head>
-    <body>
-    <h1>Project Starter</h1>
+    <title>Star Wars Navigation</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>Ascensão da Rebelião</h1>
+        <small>Por Mon Mothma</small>
+        <p>
+          A galáxia vive tempos sombrios sob o domínio do Império. Mas a esperança renasce nas sombras, com células rebeldes se organizando em planetas distantes. De Alderaan a Lothal, a resistência cresce silenciosamente. As histórias de heróis como Cassian Andor e Jyn Erso ecoam entre os oprimidos, reacendendo o desejo de liberdade. A rebelião não é apenas uma luta por sobrevivência — é uma luta por justiça, por voz e por paz.
+        </p>
+
+        <h3>Meu Droide de Confiança</h3>
+        <img
+          src="https://cdn.freewebstore.com/origin/521469/1530076319690_k2-so1.jpg"
+          alt="Droide Star Wars"
+        />
+        <p>
+          Conheci o K-2SO em uma missão em Wobani. Sarcástico, leal e imprevisível, esse droide imperial reprogramado se tornou meu maior aliado. Ele salvou minha vida mais vezes do que consigo contar. Cada batalha com ele ao lado era menos sobre algoritmos e mais sobre confiança. Droids podem ter circuitos, mas alguns demonstram mais humanidade que muitos senadores em Coruscant.
+        </p>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><i class="fas fa-home"></i><a href="#"> Início</a></li>
+        <li><i class="fas fa-user-alt"></i><a href="#"> Rebeldes</a></li>
+        <li><i class="fas fa-envelope"></i><a href="#"> Contato</a></li>
+      </ul>
+    </nav>
     <script src="script.js"></script>
-    </body>
+  </body>
 </html>
