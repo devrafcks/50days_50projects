@@ -1,6 +1,14 @@
-# 50 Projects in 50 Days
+# 50 Projects in 50 Days 🚀
 
-Este repositório é uma coletânea de 50 mini projetos de HTML, CSS e JavaScript, criados com o objetivo de praticar e desenvolver habilidades em front-end de forma prática e intensiva. Cada projeto foca em um conceito específico de interatividade, layout ou lógica, ideal para quem está aperfeiçoando suas habilidades em JavaScript Vanilla e DOM.
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)](#)
+
+Este repositório reúne uma série de **50 mini projetos** desenvolvidos com **HTML, CSS e JavaScript puro**, baseados no desafio _50 Projects in 50 Days_. A proposta é simples: criar um projeto por dia para fortalecer conhecimentos práticos em **desenvolvimento front-end**, com foco em:
+
+- Manipulação do DOM
+- Animações com CSS
+- Layouts responsivos
+- Interatividade com JavaScript Vanilla
+
 
 > ✅ Projeto criado originalmente por [Brad Traversy](https://github.com/bradtraversy) no desafio [50projects50days](https://github.com/bradtraversy/50projects50days). Todos os créditos a ele.
 
