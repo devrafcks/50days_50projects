@@ -12,6 +12,11 @@ Este repositório reúne uma série de **50 mini projetos** desenvolvidos com **
 
 > ✅ Projeto criado originalmente por [Brad Traversy](https://github.com/bradtraversy) no desafio [50projects50days](https://github.com/bradtraversy/50projects50days). Todos os créditos a ele.
 
+## Código e Projetos Originais
+
+Abaixo está a tabela contendo a prévia visual e o código original de cada projeto deste repositório.
+
+
 |  #  | Project                                                                                                                     | Live Demo                                                                         |
 | :-: | --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | 01  | [Expanding Cards](https://github.com/bradtraversy/50projects50days/tree/master/expanding-cards)                             | [Live Demo](https://50projects50days.com/projects/expanding-cards/)               |
