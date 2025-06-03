@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Unbounded', sans-serif;
+  background-color: #0e0e12;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+  color: #b4b4ff;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px rgba(180, 180, 255, 0.3);
+}
+
+.faq-container {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.faq {
+  background-color: #1c1c24;
+  border: 1px solid #3e3e55;
+  border-radius: 10px;
+  margin: 20px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0 0 5px rgba(80, 80, 120, 0.2);
+}
+
+.faq.active {
+  background-color: #262633;
+  box-shadow: 0 0 12px rgba(180, 180, 255, 0.3);
+  transform: scale(1.02);
+}
+
+.faq.active::before,
+.faq.active::after {
+  content: '\f059'; /* question-circle icon */
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: #6c7ae0;
+  font-size: 7rem;
+  position: absolute;
+  opacity: 0.1;
+  top: 10px;
+  left: 20px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.faq.active::before {
+  color: #94a3ff;
+  top: -20px;
+  left: -40px;
+  transform: rotateY(180deg);
+}
+
+.faq-title {
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.faq-text {
+  display: none;
+  margin: 25px 0 0;
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+
+.faq.active .faq-text {
+  display: block;
+}
+
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  color: #b4b4ff;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.faq-toggle:hover {
+  background-color: #3a3a5a;
+}
+
+.faq-toggle:focus {
+  outline: none;
+}
+
+.faq-toggle .fa-times {
+  display: none;
+}
+
+.faq.active .faq-toggle .fa-times {
+  display: block;
+}
+
+.faq.active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+.faq.active .faq-toggle {
+  background-color: #6c7ae0;
+  color: #fff;
+}
