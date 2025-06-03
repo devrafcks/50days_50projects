@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(135deg, #355c7d, #6c5b7b, #c06c84);
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.form-control {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.form-control input,
+.form-control textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 0;
+  resize: none;
+  transition: border-color 0.3s ease;
+  z-index: 1;
+  position: relative;
+}
+
+.form-control input:focus,
+.form-control textarea:focus,
+.form-control input:valid,
+.form-control textarea:valid {
+  outline: none;
+  border-color: #00d2ff;
+}
+
+.form-control label {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  pointer-events: none;
+  display: flex;
+  gap: 2px;
+}
+
+.form-control label span {
+  font-size: 18px;
+  color: #ccc;
+  display: inline-block;
+  min-width: 5px;
+  transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus ~ label span,
+.form-control input:valid ~ label span,
+.form-control textarea:focus ~ label span,
+.form-control textarea:valid ~ label span {
+  transform: translateY(-28px);
+  color: #00d2ff;
+}
+
+.btn {
+  background: #00d2ff;
+  color: #000;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #00b5e0;
+}
