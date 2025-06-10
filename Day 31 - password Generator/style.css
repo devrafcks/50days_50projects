@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e2f;
+  color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.container {
+  background-color: #2c2c47;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.result-container {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  padding: 12px;
+  height: 52px;
+  margin-bottom: 20px;
+}
+
+.result-container #result {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 100%;
+  word-break: break-all;
+  padding-right: 8px;
+}
+
+#result::-webkit-scrollbar {
+  width: 6px;
+}
+
+#result::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+
+.result-container .btn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.result-container .btn:hover {
+  color: #8ab4f8;
+}
+
+.btn {
+  background-color: #3b3b98;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #5050c5;
+}
+
+.btn-large {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.setting label {
+  font-size: 15px;
+  color: #ddd;
+}
+
+.setting input[type="checkbox"],
+.setting input[type="number"] {
+  transform: scale(1.1);
+}
