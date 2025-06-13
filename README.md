@@ -2,6 +2,9 @@
 
 [![Status](https://img.shields.io/badge/status-finalizado-brightgreen)](#)
 
+![image](https://github.com/user-attachments/assets/40211488-9c9c-46fb-8954-9c15dbc15333)
+
+
 Este repositório reúne uma série de **50 mini projetos** desenvolvidos com **HTML, CSS e JavaScript puro**, baseados no desafio _50 Projects in 50 Days_. A proposta é simples: criar um projeto por dia para fortalecer conhecimentos práticos em **desenvolvimento front-end**, com foco em:
 
 - Manipulação do DOM
