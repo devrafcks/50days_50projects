@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f6fa;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 350px;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.subtitle {
+  display: block;
+  margin: 5px 0 15px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.header {
+  background-color: #3e57db;
+  color: #fff;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header input,
+.country-filter {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 30px;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.header input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.header input:focus,
+.country-filter:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.country-filter {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #283b98;
+  font-weight: bold;
+  appearance: none;
+  cursor: pointer;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.user-list li {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease;
+}
+
+.user-list li:hover {
+  background-color: #f0f3ff;
+}
+
+.user-list li.hide {
+  display: none;
+}
+
+.user-list img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 50px;
+  width: 50px;
+  border: 2px solid #3e57db;
+}
+
+.user-info {
+  margin-left: 15px;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.user-info p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  color: #777;
+}
+
+.country-filter,
+#filter {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-size: 13px;
+  padding: 10px 20px;
+  margin: 0;
+  background-color: #f1f3f7;
+  color: #333;
+  font-weight: 500;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
