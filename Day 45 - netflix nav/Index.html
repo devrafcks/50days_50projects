@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navegação Mobile - Netflix</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+
+  <!-- Estilo Personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Botão para abrir navegação -->
+  <button class="nav-btn open-btn" aria-label="Abrir menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
+  <!-- Logotipo -->
+  <img
+    src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
+    alt="Logo da Netflix" class="logo" />
+
+  <p class="text">Navegação Mobile</p>
+
+  <!-- Navegação em camadas -->
+  <nav class="nav nav-black">
+    <div class="nav nav-red">
+      <div class="nav nav-white">
+
+        <!-- Botão para fechar navegação -->
+        <button class="nav-btn close-btn" aria-label="Fechar menu">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- Logotipo dentro do menu -->
+        <img
+          src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
+          alt="Logo da Netflix" class="logo" />
+
+        <!-- Lista principal de navegação -->
+        <ul class="list">
+          <li><a href="#">Equipes</a></li>
+          <li><a href="#">Localizações</a></li>
+          <li><a href="#">Vida na Netflix</a></li>
+          <li>
+            <ul class="sub-list">
+              <li><a href="#">Cultura Netflix</a></li>
+              <li><a href="#">Equilíbrio trabalho/vida</a></li>
+              <li><a href="#">Inclusão e diversidade</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
